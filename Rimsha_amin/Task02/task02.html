@@ -1,0 +1,304 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devkit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      height: 100%;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    /* .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      width: 100%;
+      margin: 40px auto;
+    } */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .logo {
+      color: #3B82F6;
+      font-size: 28px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+    }
+    .nav a {
+      color: #6B7280;
+      margin-left: 25px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .content {
+      flex: 1;
+      text-align: left;
+    }
+    h1 {
+      color: #3B82F6;
+      font-size: 40px;
+      margin: 0 0 15px 0;
+    }
+    h2 {
+      color: black;
+      font-size: 28px;
+      margin: 0 0 20px 0;
+    }
+    p {
+      color: #6B7280;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px 10px 0 0;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .btn-primary {
+      background-color: #3B82F6;
+      color: white;
+    }
+    .btn-secondary {
+      background-color: #EFF6FF;
+      color: #3B82F6;
+      border: 1px solid #3B82F6;
+    }
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    .footer {
+      background-color: #1A1F2B;
+      color: white;
+      padding: 40px;
+      width: 100%;
+      margin-top: auto;
+    }
+    .cta-banner {
+      background-color: #F4F6FF;
+      color: #6B7280;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .cta-banner h3 {
+      font-size: 24px;
+      margin: 0;
+      color: black;
+    }
+    .cta-btn {
+      background-color: #6B46C1;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-column {
+      flex: 1;
+      margin-right: 40px;
+    }
+    .footer-column:last-child {
+      margin-right: 0;
+    }
+    .footer-column h4 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #D1D5DB;
+    }
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    .footer-column ul li a {
+      color: #D1D5DB;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .subscribe-form {
+      display: flex;
+      align-items: center;
+    }
+    .subscribe-form input {
+      padding: 10px;
+      border: none;
+      border-radius: 6px 0 0 6px;
+      width: 200px;
+      font-size: 16px;
+    }
+    .subscribe-form button {
+      background-color: #6B46C1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 0 6px 6px 0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #3B82F6;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="nav">
+        <a href="#" class="logo">Devkit.</a>
+        <div class="nav-links">
+          <a href="#">Account</a>
+          <a href="#">About</a>
+          <a href="#">Service</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="content">
+          <h1>Devkit.</h1>
+          <h2>Welcome to <span style="color: #3B82F6;">Devkit.</span><br>Develop anything.</h2>
+          <p>Build a beautiful, modern website with flexible components built from scratch.</p>
+          <a href="#" class="btn btn-primary">View All Pages <span style="color: #3B82F6;">→</span></a>
+          <a href="#" class="btn btn-secondary">Documentation</a>
+        </div>
+        <div class="hero-image">
+          <img src="D:\Web_Development_Training\Rimsha_amin\Task02\heroImg.jpeg" alt="Hero Illustration">
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="cta-banner">
+        <h3>Ready to get started? Talk to us today</h3>
+        <a href="#" class="cta-btn">Get started</a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>&lt;/&gt;</h4>
+        </div>
+        <div class="footer-column">
+          <h4>About Devkit</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Get in touch</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Member Discounts</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Not quite ready for Devkit?</h4>
+          <p>Join our online no-code community for free. No spam. Ever.</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-icon">💬</div>
+  </div> -->
+  <!-- <script>
+    // Add any JavaScript functionality here if needed
+  </script>
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devkit</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="nav">
+          <a href="#" class="logo">Devkit.</a>
+          <div class="nav-links">
+            <a href="#">Account</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="content">
+            <h1>Devkit.</h1>
+            <h2>Welcome to <span style="color: #3B82F6;">Devkit.</span><br>Develop anything.</h2>
+            <p>Build a beautiful, modern website with flexible components built from scratch.</p>
+            <a href="#" class="btn btn-primary">View All Pages <span style="color: #3B82F6;">→</span></a>
+            <a href="#" class="btn btn-secondary">Documentation</a>
+          </div>
+          <div class="hero-image">
+            <img src="D:\Web_Development_Training\Rimsha_amin\Task02\heroImg.jpeg" alt="Hero Illustration">
+          </div>
+        </div>
+      </div>
+      
+  </body>
+</html>
+
